@@ -1,0 +1,27 @@
+# --- Terraform ---
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# קבצי משתנים וסודות (אל תשמור רגישים בגיט)
+*.secrets*.tfvars
+*.auto.tfvars.json
+# אם אתה מחזיק קבצי env לא-רגישים – תן להם שם בלי "secrets" והשאר אותם
+
+# --- מפתחות/תעודות ---
+id_rsa
+id_rsa.pub
+*.pem
+*.key
+*.p12
+
+# --- מערכת/עורך ---
+.DS_Store
+.vscode/
+.idea/
+
+*.tfplan
+lambda/*.zip
