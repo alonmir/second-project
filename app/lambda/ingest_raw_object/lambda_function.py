@@ -20,9 +20,6 @@ def handler(event, context):
 
         logger.info(f"New object uploaded: s3://{bucket}/{key}")
 
-        # בעתיד: מפה היינו מוציאים מטא-דאטה, מפרקים את הקובץ,
-        # ואז מכניסים לרשומה ב-DB.
-        # כאן רק נדגים התחברות (ברמת הרעיון, לא חייב apply עכשיו):
         #
         # db_host = os.environ["DB_HOST"]
         # db_user = os.environ["DB_USER"]
